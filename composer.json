@@ -1,0 +1,29 @@
+{
+    "name": "ezamux/core",
+    "version" : "1.0.0",
+    "description": "Set of usefull trait for Laravel",
+    "authors": [
+        {
+            "name": "Sanctorum Thomas",
+            "email": "sanctorum.thomas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ezamux\\Traits\\": "src/Traits/",
+            "Ezamux\\Providers\\": "src/Providers/"
+        },
+        "classmap": ["src/"]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ezamux\\Providers\\BladeServiceProvider",
+                "Ezamux\\Providers\\BlueprintServiceProvider"
+            ],
+            "aliases": {
+                "Ezamux\\Traits": "Ezamux\\Traits"
+            }
+        }
+    }
+}
